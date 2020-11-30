@@ -1,0 +1,55 @@
+.nav {
+   padding: 14px 0;
+   background-color: $gray;
+   color: #fff;
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   &__logo {
+      @include flex-center-center;
+      &_text {
+         margin-left: 6px;
+         span {
+            display: block;
+            font-size: 36px;
+            font-weight: 400;
+            line-height: 32px;
+         }
+         font-weight: 500;
+         font-size: 11px;
+         line-height: 16px;
+      }
+   }
+   &__menu {
+      @include flex-sb-center;
+   }
+   &__item {
+      &:not(:last-child) {
+         margin-right: 51px;
+      }
+   }
+   &__link {
+      font-family: "Roboto";
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: 400;
+      color: #fff;
+      text-decoration: none;
+      position: relative;
+      &:after {
+         content: "";
+         position: absolute;
+         bottom: -5px;
+         left: 0;
+         width: 100%;
+         height: 2px;
+         background-color: rgba(255, 255, 255, 0);
+         transition: all 0.2s linear;
+      }
+      &:hover:after {
+         background-color: rgba(255, 255, 255, 1);
+      }
+   }
+}

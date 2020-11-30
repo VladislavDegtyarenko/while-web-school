@@ -1,0 +1,16 @@
+@import "libs/reset";
+@import "base/variables";
+@import "base/mixins";
+@import "blocks/button";
+
+@import "blocks/nav";
+@import "blocks/promo";
+
+body {
+   font-family: "Roboto";
+}
+
+.container {
+   width: 960px;
+   margin: 0 auto;
+}
