@@ -1,4 +1,6 @@
+//@import "libs/bootstrap-reboot.min";
 @import "libs/reset";
+@import "libs/fonts";
 @import "base/variables";
 @import "base/mixins";
 @import "blocks/button";
@@ -6,11 +8,13 @@
 @import "blocks/nav";
 @import "blocks/promo";
 
-body {
-   font-family: "Roboto";
+* {
+   font-family: "Roboto" !important;
 }
 
 .container {
    width: 960px;
    margin: 0 auto;
 }
+
+@import "base/media";

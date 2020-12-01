@@ -1,7 +1,6 @@
 .promo {
    min-height: 600px;
-   padding-top: 64px;
-   padding-bottom: 76px;
+   padding: 6vw 0;
    text-align: center;
    color: #fff;
    box-sizing: border-box;
@@ -17,11 +16,11 @@
       font-weight: 500;
       font-size: 100px;
       line-height: 90px;
-      margin-top: 40px;
+      margin-top: 35px;
       text-transform: uppercase;
    }
    &__info {
-      margin-top: 30px;
+      margin-top: 35px;
       font-size: 18px;
       font-weight: 400;
       span {

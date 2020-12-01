@@ -1,0 +1,35 @@
+@media (max-width: 1199px) {
+   .container {
+      width: 90%;
+   }
+   .promo {
+      min-height: 450px;
+      &__title {
+         font-size: 64px;
+         line-height: 70px;
+         margin-top: 20px;
+      }
+      &__descr {
+         font-size: 14px;
+         line-height: 25px;
+      }
+      &__info {
+         margin-top: 20px;
+         font-size: 12px;
+         span {
+            font-size: 24px;
+         }
+      }
+      &__button {
+         margin-top: 35px;
+      }
+   }
+}
+@media (max-width: 767px) {
+   .nav__menu {
+      display: none;
+   }
+   .nav__burger {
+      display: flex;
+   }
+}
