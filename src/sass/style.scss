@@ -1,12 +1,24 @@
 //@import "libs/bootstrap-reboot.min";
 @import "libs/reset";
+//@import "libs/normalize";
 @import "libs/fonts";
 @import "base/variables";
 @import "base/mixins";
+@import "base/animation";
 @import "blocks/button";
 
 @import "blocks/nav";
 @import "blocks/promo";
+@import "blocks/about";
+@import "blocks/course";
+@import "blocks/easy";
+@import "blocks/finish";
+@import "blocks/get";
+@import "blocks/footer";
+@import "blocks/modal";
+@import "blocks/modal-contacts";
+@import "blocks/modal-lessons";
+@import "blocks/modal-mentor";
 
 * {
    font-family: "Roboto" !important;
@@ -15,6 +27,7 @@
 .container {
    width: 960px;
    margin: 0 auto;
+   border: solid 1px rgba($color: tomato, $alpha: 0.5);
 }
 
-@import "base/media";
+//@import "base/media";

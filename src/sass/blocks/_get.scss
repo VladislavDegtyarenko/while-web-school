@@ -1,0 +1,66 @@
+.get {
+   padding: 4vw 0 5vw;
+   &__title {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 100%;
+      text-transform: uppercase;
+      color: $main;
+      position: relative;
+      text-align: center;
+      &:after {
+         position: absolute;
+         content: url("../icons/get/get-title-lines.svg");
+         left: calc(50% - 149px);
+         bottom: -10px;
+      }
+   }
+   &__wrapper {
+      margin: 35px auto 0;
+      width: 670px;
+      @include flex-sb-center;
+      flex-wrap: wrap;
+   }
+   &__card {
+      width: 180px;
+      height: 160px;
+      flex-basis: 30%;
+      @include flex-center-center;
+      flex-direction: column;
+      margin-bottom: 10px;
+      padding: 10px;
+      box-sizing: border-box;
+      cursor: pointer;
+      opacity: 0.7;
+      border: 2px dashed rgba($color: $main, $alpha: 0);
+      border-radius: 17px;
+      transition: opacity 0.2s linear, border 0.2s linear;
+      &:hover {
+         opacity: 1;
+         border: 2px dashed rgba($color: $main, $alpha: 1);
+      }
+      &_img {
+         width: 100px;
+         height: 100px;
+         display: flex;
+         justify-content: center;
+         align-items: flex-end;
+         img {
+            object-fit: contain;
+            max-width: 100%;
+            max-height: 100%;
+         }
+      }
+      &_text {
+         margin-top: 15px;
+         color: $main;
+         font-size: 12px;
+         font-weight: 400;
+         line-height: 100%;
+         text-align: center;
+      }
+   }
+   &__button {
+      margin-top: 43px;
+   }
+}

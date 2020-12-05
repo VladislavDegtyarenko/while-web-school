@@ -1,0 +1,258 @@
+.finish {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   min-height: 510px;
+   color: #fff;
+   &__main {
+      background: linear-gradient(rgba(#333333, 0.75), rgba(#333333, 0.75)),
+         url("../../img/finish-main.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top 0px right 0, top 0px right 0;
+      width: 45%;
+      position: relative;
+      padding-top: 30px;
+   }
+   &__title {
+      display: flex;
+      justify-content: center;
+      margin-right: 50px;
+      margin-left: auto;
+      padding: 5px 10px;
+      width: 260px;
+      text-transform: uppercase;
+      position: relative;
+      font-size: 20px;
+      line-height: 100%;
+      border-bottom: solid 2px #d5d5d5;
+      &:before {
+         position: absolute;
+         bottom: -4px;
+         left: -6px;
+         width: 6px;
+         height: 6px;
+         background-color: #d5d5d5;
+         border-radius: 100%;
+         content: "";
+      }
+      &:after {
+         position: absolute;
+         bottom: -4px;
+         right: -6px;
+         width: 6px;
+         height: 6px;
+         background-color: #d5d5d5;
+         border-radius: 100%;
+         content: "";
+      }
+      span {
+         display: inline-block;
+         font-size: 10px;
+         line-height: 100%;
+         letter-spacing: 0.1em;
+         color: #ffffff;
+         margin-left: 5px;
+      }
+
+      &_lines {
+         height: 55px;
+         width: 165px;
+         border-right: solid 2px #d5d5d5;
+         border-bottom: solid 2px #d5d5d5;
+         display: block;
+         position: relative;
+         right: 155px;
+         margin-left: auto;
+         &:before {
+            position: absolute;
+            top: -4px;
+            right: -4px;
+            width: 6px;
+            height: 6px;
+            background-color: #d5d5d5;
+            border-radius: 100%;
+            content: "";
+         }
+         &:after {
+            position: absolute;
+            bottom: -4px;
+            right: -4px;
+            width: 6px;
+            height: 6px;
+            background-color: #d5d5d5;
+            border-radius: 100%;
+            content: "";
+         }
+      }
+   }
+   &__wrapper {
+      position: relative;
+      height: 290px;
+      margin-top: 32px;
+      &:before {
+         position: absolute;
+         height: 290px;
+         width: 2px;
+         background-color: #d5d5d5;
+         content: "";
+         right: 320px;
+         top: -32px;
+      }
+      &:after {
+         position: absolute;
+         bottom: 28px;
+         right: 318px;
+         width: 6px;
+         height: 6px;
+         background-color: #d5d5d5;
+         border-radius: 100%;
+         content: "";
+      }
+   }
+   &__item {
+      width: 320px;
+      padding: 3px 0;
+      margin-left: auto;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 130%;
+      @include flex-center-center;
+      transition: all 0.2s linear;
+      background-color: rgba($color: $main, $alpha: 0);
+      cursor: pointer;
+   }
+   &__link {
+      @include flex-center-center;
+      position: relative;
+      width: 100%;
+      box-sizing: border-box;
+      border-top: solid 2px #d5d5d5;
+      border-bottom: solid 2px #d5d5d5;
+      transition: all 0.2s linear;
+      span {
+         font-weight: 400;
+         font-size: 20px;
+         line-height: 130%;
+         margin: 0 5px;
+      }
+      &:before {
+         position: absolute;
+         top: -4px;
+         left: -4px;
+         width: 6px;
+         height: 6px;
+         background-color: #d5d5d5;
+         border-radius: 100%;
+         content: "";
+      }
+      &:after {
+         position: absolute;
+         bottom: -4px;
+         left: -4px;
+         width: 6px;
+         height: 6px;
+         background-color: #d5d5d5;
+         border-radius: 100%;
+         content: "";
+      }
+   }
+   &__card {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 100%;
+      width: 100%;
+      height: 510px;
+      padding: 60px 20px 60px 40px;
+      background-color: rgba($color: $main, $alpha: 0.9);
+      transition: all 0.2s linear;
+      box-sizing: border-box;
+      &_line {
+         display: inline-block;
+         position: relative;
+         width: 35px;
+         height: 3px;
+         background-color: #fff;
+         &:before {
+            position: absolute;
+            top: -3px;
+            left: -4px;
+            width: 8px;
+            height: 8px;
+            background-color: #fff;
+            border-radius: 100%;
+            content: "";
+         }
+      }
+      &_title {
+         margin-top: 37px;
+      }
+      &_descr {
+         margin-top: 25px;
+         font-weight: 400;
+         font-size: 14px;
+         line-height: 22px;
+         span {
+            font-weight: 500;
+         }
+      }
+   }
+   #frontend {
+      &_card {
+         top: -152px;
+      }
+   }
+   #backend {
+      &_card {
+         top: -151px;
+      }
+   }
+   &__linebetween {
+      display: block;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      margin-left: auto;
+      width: 50px;
+      height: 0;
+      border-bottom: solid 2px #d5d5d5;
+      position: relative;
+      right: 270px;
+      &:before {
+         position: absolute;
+         top: -2px;
+         right: -4px;
+         width: 6px;
+         height: 6px;
+         background-color: #d5d5d5;
+         border-radius: 100%;
+         content: "";
+      }
+   }
+   &__side {
+      background: url("../../img/finish-side.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top 0px left -150px;
+      flex-grow: 1;
+      position: relative;
+      z-index: -1;
+   }
+   &__button {
+      position: absolute;
+      left: 187px;
+      bottom: 51px;
+   }
+}
+
+.finish__item:hover .finish__card {
+   opacity: 1;
+   visibility: visible;
+}
+
+.finish__item:hover .finish__link {
+   opacity: 1;
+   visibility: visible;
+   background-color: $main;
+}

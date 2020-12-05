@@ -1,6 +1,6 @@
 .promo {
    min-height: 600px;
-   padding: 6vw 0;
+   padding: 7vw 0;
    text-align: center;
    color: #fff;
    box-sizing: border-box;
@@ -9,6 +9,7 @@
    background-color: rgba($color: #7973b3, $alpha: 0.6);
    &__descr {
       font-size: 19px;
+      font-weight: 400;
       line-height: 25px;
       text-transform: uppercase;
    }
@@ -26,11 +27,12 @@
       span {
          display: block;
          font-size: 30px;
+         font-weight: 500;
          margin: 5px 0;
       }
    }
    &__button {
-      margin-top: 80px;
+      margin-top: 40px;
    }
    &__video {
       position: absolute;

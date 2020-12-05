@@ -1,0 +1,134 @@
+.about {
+   padding-top: 5vw;
+   padding-bottom: 3vw;
+   &__inner {
+      @include flex-sb-center;
+      flex-wrap: nowrap;
+      flex-direction: row;
+   }
+   &__card {
+      border: 2px solid #7973b3;
+      border-radius: 10px;
+      flex-basis: 32%;
+      transition: transform 1.5s ease-in-out, background-color 0.5s linear;
+      transform-style: preserve-3d;
+      height: 365px;
+      background-color: #fff;
+      cursor: pointer;
+      &:hover .about__front {
+         color: #fff;
+         &_title {
+            color: #fff;
+         }
+         &_icon img {
+            fill: #fff;
+            &:nth-of-type(1) {
+               opacity: 0;
+            }
+            &:nth-of-type(2) {
+               opacity: 1;
+            }
+         }
+      }
+      &:hover {
+         background-color: $main;
+      }
+      &-clicked {
+         transform: rotateY(180deg);
+         transition: transform 1.5s ease-in-out;
+         background-color: $main;
+      }
+   }
+   &__front,
+   &__back {
+      height: 100%;
+      box-sizing: border-box;
+      border-radius: 10px;
+      transition: all 0.5s linear;
+   }
+   &__front {
+      @include flex-center-center;
+      flex-direction: column;
+      padding: 50px 0 90px;
+      position: absolute;
+      width: 100%;
+      color: inherit;
+      &_title {
+         font-weight: 400;
+         font-size: 20px;
+         line-height: 26px;
+         color: $main;
+         margin-bottom: 40px;
+         transition: color 0.5s linear;
+      }
+      &_icon {
+         width: 160px;
+         height: 160px;
+         pointer-events: none;
+         position: relative;
+         img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+            transition: opacity 0.5s linear;
+            &:nth-of-type(1) {
+               opacity: 1;
+            }
+            &:nth-of-type(2) {
+               opacity: 0;
+            }
+         }
+      }
+      &_arrow {
+         bottom: 20px;
+         right: 25px;
+         position: absolute;
+      }
+   }
+   &__back {
+      transform: rotateY(180deg);
+      background-color: $main;
+      padding: 20px 20px 30px 30px;
+      &_line {
+         width: 17px;
+         height: 2px;
+         position: relative;
+         display: inline-block;
+         background: #fff;
+         &:before {
+            display: inline-block;
+            position: absolute;
+            content: "";
+            top: -1px;
+            border-radius: 100%;
+            left: 0;
+            width: 5px;
+            height: 5px;
+            background: #fff;
+         }
+      }
+      &_title {
+         color: #fff;
+         margin-top: 20px;
+      }
+      &_text {
+         font-size: 14px;
+         line-height: 130%;
+         font-weight: 400;
+         margin-top: 12px;
+         color: #fff;
+      }
+      &_arrow {
+         position: absolute;
+         left: 30px;
+         bottom: 20px;
+         transform: rotate(180deg);
+      }
+   }
+   &__button {
+      margin-top: 60px;
+   }
+}

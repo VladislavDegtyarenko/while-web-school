@@ -1,0 +1,113 @@
+.course {
+   padding: 1.6vw 0px;
+   background-color: $gray;
+   background-image: url("../../icons/course/course-bg-web.svg"),
+      url("../../icons/course/course-bg-man.svg");
+   background-position: center center, bottom 40px right 40px;
+   background-size: 1000px 400px, 140px 180px;
+   background-repeat: no-repeat;
+   &__title {
+      display: inline-block;
+      position: relative;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 100%;
+      text-transform: uppercase;
+      color: #fff;
+      margin-left: 140px;
+      padding-top: 10px;
+      padding-bottom: 8px;
+      padding-left: 15px;
+      padding-right: 35px;
+      border-left: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      border-bottom-left-radius: 9px;
+      &:after {
+         position: absolute;
+         bottom: -4px;
+         right: -6px;
+         width: 7px;
+         height: 7px;
+         background-color: #fff;
+         border-radius: 100%;
+         content: "";
+      }
+   }
+   &__wrapper {
+      margin: 35px auto 0;
+      width: 670px;
+      @include flex-sb-center;
+   }
+   &__card {
+      @include flex-center-center;
+      position: relative;
+      flex-basis: 30%;
+      min-height: 180px;
+      padding: 40px 20px;
+      border-radius: 10px;
+      box-sizing: border-box;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 130%;
+      text-align: center;
+      cursor: pointer;
+      background-color: #fff;
+      color: $gray;
+      transition: all 0.2s linear;
+      &-cogwheel {
+         &:hover {
+            background-color: $main;
+            color: #fff;
+            &:before {
+               animation-play-state: running;
+            }
+         }
+         &:before {
+            animation: rotating 3s linear infinite;
+            animation-play-state: paused;
+            position: absolute;
+            content: url("../icons/course/course-cogwheel.svg");
+            display: block;
+            top: -20px;
+            left: calc(50% - 20px);
+            width: 40px;
+            height: 40px;
+         }
+      }
+   }
+   &__descr {
+      position: relative;
+      margin-top: 20px;
+      margin-left: 100px;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 250%;
+      color: #ffffff;
+      &_heading {
+         font-weight: 400;
+         font-size: 12px;
+         line-height: 200%;
+      }
+      &_item {
+         margin-top: 5px;
+         list-style-type: disc;
+         margin-left: 15px;
+         font-weight: 400;
+      }
+      &_statistics {
+         margin-top: 32px;
+         font-weight: 400;
+         font-size: 8px;
+         line-height: 100%;
+         color: #ffffff;
+      }
+      &_list {
+         margin-left: 40px;
+      }
+      &_button {
+         position: absolute;
+         bottom: 20px;
+         left: calc(50% - 60px);
+      }
+   }
+}
