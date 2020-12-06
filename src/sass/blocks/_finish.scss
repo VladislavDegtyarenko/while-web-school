@@ -6,13 +6,13 @@
    color: #fff;
    &__main {
       background: linear-gradient(rgba(#333333, 0.75), rgba(#333333, 0.75)),
-         url("../../img/finish-main.jpg");
+         url("../img/finish-main-1080p.jpg");
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: top 0px right 0, top 0px right 0;
-      width: 45%;
+      background-position: top 0px right 0, center right 0;
+      width: 50%;
       position: relative;
-      padding-top: 30px;
+      padding: 2vw 0;
    }
    &__title {
       display: flex;
@@ -169,6 +169,7 @@
       background-color: rgba($color: $main, $alpha: 0.9);
       transition: all 0.2s linear;
       box-sizing: border-box;
+      z-index: 1;
       &_line {
          display: inline-block;
          position: relative;
@@ -231,13 +232,13 @@
       }
    }
    &__side {
-      background: url("../../img/finish-side.jpg");
+      background: url("../img/finish-side-1080p.jpg");
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: top 0px left -150px;
+      background-position: bottom 0px right 0px;
       flex-grow: 1;
       position: relative;
-      z-index: -1;
+      padding: 2vw 0;
    }
    &__button {
       position: absolute;

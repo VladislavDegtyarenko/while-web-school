@@ -1,3 +1,48 @@
+@media screen and (min-width: 1920px) {
+   .finish {
+      &__main {
+         background: linear-gradient(rgba(#333333, 0.75), rgba(#333333, 0.75)),
+            url("../img/finish-main-2k.jpg");
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: top 0px right 0, center right 0;
+      }
+      &__side {
+         background-image: url("../img/finish-side-2k.jpg");
+      }
+   }
+}
+
+@media screen and (min-width: 2560px) {
+   .finish {
+      &__main {
+         background: linear-gradient(rgba(#333333, 0.75), rgba(#333333, 0.75)),
+            url("../img/finish-main-4k.jpg");
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: top 0px right 0, center right 0;
+      }
+      &__side {
+         background-image: url("../img/finish-side-4k.jpg");
+      }
+   }
+}
+
+@media screen and (min-width: 3840px) {
+   .finish {
+      &__main {
+         background: linear-gradient(rgba(#333333, 0.75), rgba(#333333, 0.75)),
+            url("../img/finish-main-5k.jpg");
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: top 0px right 0, center right 0;
+      }
+      &__side {
+         background-image: url("../img/finish-side-5k.jpg");
+      }
+   }
+}
+
 @media (max-width: 1199px) {
    .container {
       width: 90%;
@@ -23,6 +68,18 @@
       &__button {
          margin-top: 35px;
          font-size: 12px;
+      }
+   }
+   .finish {
+      &__main {
+         background: linear-gradient(rgba(#333333, 0.75), rgba(#333333, 0.75)),
+            url("../img/finish-main-720p.jpg");
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: top 0px right 0, center right 0;
+      }
+      &__side {
+         background-image: url("../img/finish-side-720p.jpg");
       }
    }
 }

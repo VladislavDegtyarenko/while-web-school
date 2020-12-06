@@ -21,7 +21,7 @@
          position: absolute;
          left: 0;
          bottom: 0;
-         content: url("../../icons/lessons/lessons-line.svg");
+         content: url("../icons/lessons/lessons-line.svg");
          box-sizing: border-box;
       }
    }
@@ -70,8 +70,8 @@
          background: #fff;
          clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%, 25% 50%);
          box-sizing: border-box;
-         background-image: url("../../icons/lessons/card-lines.svg"),
-            url("../../icons/lessons/card-quotation-mark.svg");
+         background-image: url("../icons/lessons/card-lines.svg"),
+            url("../icons/lessons/card-quotation-mark.svg");
          background-repeat: no-repeat;
          background-position: top 0 left 5px, bottom 10px left 32px;
          background-size: contain, 17px 15px;

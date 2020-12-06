@@ -1,0 +1,41 @@
+.form {
+   z-index: 9;
+   &__inner {
+      padding: 0;
+      background: #d5d5d5;
+   }
+   &__title {
+      padding: 30px 33px;
+      font-size: 20px;
+      line-height: 130%;
+      text-transform: capitalize;
+      color: #ffffff;
+      background: $main;
+   }
+   &__wrapper {
+      padding: 26px 33px;
+      display: flex;
+      flex-direction: column;
+   }
+   &__label {
+      display: block;
+      margin-bottom: 10px;
+   }
+   &__input {
+      flex-grow: 1;
+      padding: 10px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 130%;
+      background: #ffffff;
+      border: none;
+      border-radius: 5px;
+      box-shadow: border-box;
+      &::placeholder {
+         color: #bdbdbd;
+      }
+   }
+   &__button {
+      margin-top: 25px;
+   }
+}

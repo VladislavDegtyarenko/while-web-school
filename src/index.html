@@ -28,7 +28,7 @@
                      <a href="#" class="nav__link" id="mentorButton">наставник</a>
                   </li>
                   <li class="nav__item">
-                     <a href="#" class="nav__link">о нас</a>
+                     <a href="#" class="nav__link" id="aboutusButton">о нас</a>
                   </li>
                   <li class="nav__item">
                      <a href="#" class="nav__link" id="contactsButton">контакты</a>
@@ -45,9 +45,9 @@
          </div>
       </nav>
       <div class="promo">
-         <video autoplay muted loop poster="img/promo_scr.png" class="promo__video">
-            <source src="video/promo.mp4" type="video/mp4">
-          </video>
+         <video autoplay muted loop class="promo__video">
+            <source src="video/promo-compressed.mp4" type="video/mp4">
+         </video>
          <p class="promo__descr">школа web-разработки для новичков<br>от практикующих экспертов</p>
          <h1 class="promo__title">while web<br>school</h1>
          <div class="promo__info">
@@ -289,15 +289,20 @@
       </div>
    </footer>
 
-<!--    <div class="modal">
+   <div class="modal form modalForm" id="formModal">
       <div class="modal__overlay"></div>
-      <div class="modal__inner modal__inner-small">
-         <button class="modal__inner_close"></button>
-         inner
+      <div class="modal__inner modal__inner-small form__inner">
+         <!-- <button class="modal__inner_close"></button> -->
+         <h4 class="form__title">ОСТАВЬТЕ ВАШИ КОНТАКТЫ И МЫ С ВАМИ СВЯЖЕМСЯ</h4>
+         <div class="form__wrapper">
+            <label class="form__label" for="phone">Номер телефона</label>
+            <input class="form__input" type="text" id="phone" placeholder="+380(__) ___ - __ - __">
+         </div>
+         <button class="button form__button">отправить</button>
       </div>
-   </div> -->
+   </div>
 
-   <div class="modal contacts" id="contactsModal">
+   <div class="modal contacts modalSection" id="contactsModal">
       <div class="modal__overlay"></div>
       <div class="modal__inner contacts__inner">
          <button class="modal__inner_close contacts__inner_close"></button>
@@ -325,7 +330,7 @@
       </div>
    </div>
 
-   <div class="modal lessons" id="lessonsModal">
+   <div class="modal lessons modalSection" id="lessonsModal">
       <div class="modal__overlay"></div>
       <div class="modal__inner lessons__inner">
          <button class="modal__inner_close"></button>
@@ -385,7 +390,7 @@
       </div> <!-- inner -->
    </div>
 
-   <div class="modal mentor" id="mentorModal">
+   <div class="modal mentor modalSection" id="mentorModal">
       <div class="modal__overlay"></div>
       <div class="modal__inner mentor__inner">
          <button class="modal__inner_close"></button>
@@ -449,6 +454,44 @@
          </div>
          <button class="button mentor__button">начать учиться</button>
       </div> <!-- inner -->
+   </div>
+
+   <div class="modal aboutus modalSection" id="aboutusModal">
+      <div class="modal__overlay"></div>
+      <div class="modal__inner aboutus__inner">
+         <button class="modal__inner_close"></button>
+         <div class="aboutus__heading">
+            <h3 class="aboutus__title">о нас</h3>
+            <img src="icons/aboutus/aboutus-logo.svg" alt="" class="aboutus__logo">
+         </div>
+         <div class="aboutus__wrapper">
+            <div class="aboutus__item">
+               <div class="aboutus__item_img"><img src="icons/aboutus/aboutus-icon-1.svg" alt=""></div>
+               <div class="aboutus__item_text">
+                  Мы компания While Web Production,<br>
+                  успешно создаем сайты на<br>
+                  CMS и FRAMEWORKs<br>
+                  более 7 лет
+               </div>
+            </div> <!-- item -->
+            <div class="aboutus__item">
+               <div class="aboutus__item_img"><img src="icons/aboutus/aboutus-icon-2.svg" alt=""></div>
+               <div class="aboutus__item_text">
+                  Мы создали:<br>
+                  более 100 сайтов, порталов<br>
+                  и интернет магазинов <br>
+               </div>
+            </div> <!-- item -->
+            <div class="aboutus__item">
+               <div class="aboutus__item_img"><img src="icons/aboutus/aboutus-icon-3.svg" alt=""></div>
+               <div class="aboutus__item_text">
+                  Наши клиенты из:<br>
+                  США, Украины и Европы
+               </div>
+            </div> <!-- item -->
+            <button class="button aboutus__button">узнать больше</button>
+         </div> <!-- wrapper -->
+      </div>
    </div>
 
    <script src="js/script.js"></script>

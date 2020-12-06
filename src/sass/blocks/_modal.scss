@@ -16,13 +16,11 @@
       background-color: rgba($color: #000, $alpha: 0.5);
    }
    &__inner {
-      width: 400px;
-      height: 300px;
-      padding: 20px;
-      height: 600px;
       width: 1100px;
+      min-height: 312px;
       max-height: 100%;
       max-width: 100%;
+      padding: 20px;
       background-color: #fff;
       position: relative;
       box-sizing: border-box;
@@ -39,6 +37,7 @@
          height: 50px;
          background: url("../icons/close.svg") center center no-repeat;
          border: none;
+         z-index: 1;
          cursor: pointer;
          &:focus {
             outline: none;

@@ -33,7 +33,7 @@
    }
    &__item {
       &:not(:last-child) {
-         margin-right: 51px;
+         margin-right: 40px;
       }
    }
    &__link {
@@ -41,6 +41,7 @@
       font-size: 14px;
       line-height: 18px;
       font-weight: 400;
+      text-transform: uppercase;
       color: #fff;
       text-decoration: none;
       position: relative;
