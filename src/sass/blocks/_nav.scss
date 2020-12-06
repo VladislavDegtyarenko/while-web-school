@@ -12,6 +12,17 @@
       text-decoration: none;
       @include flex-center-center;
       margin-left: 20px;
+      width: 270px;
+      height: 60px;
+      &_fullimg {
+         width: 100%;
+         height: 100%;
+         img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+         }
+      }
       &_text {
          margin-left: 10px;
          white-space: nowrap;

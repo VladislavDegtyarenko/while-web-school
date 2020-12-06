@@ -70,7 +70,11 @@
       background-color: rgb(117, 151, 250);
       margin: 0 15px;
       position: relative;
-      background: url("../img/mentor-photo.png") center center / cover no-repeat;
+      background-image: url("../img/mentor-photo.png");
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 5px;
       &_label {
          position: absolute;
          bottom: 20px;
