@@ -29,6 +29,7 @@
     "animate.css": "^4.1.0",
     "gulp-htmlmin": "^5.0.1",
     "gulp-webp": "^4.0.1",
+    "imask": "^6.0.5",
     "swiper": "^6.3.3",
     "tiny-slider": "^2.9.3",
     "wowjs": "^1.1.3"

@@ -1,3 +1,10 @@
+let element = document.querySelector('.form__input')
+let phoneMask = IMask(element, {
+   mask: '+{38} (000) 000 - 00 - 00',
+   lazy: false,  // make placeholder always visible
+   colorMask: '#ff0000'
+ });
+
 document.addEventListener('DOMContentLoaded', () => {
    const burgerMenuButton = document.querySelector('.nav__burger');
    const aboutCards = document.querySelectorAll('.about__card');
@@ -16,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
    })
 
    const contactsButton = document.querySelector('#contactsButton'),
+         addressFooterButton = document.querySelector("#addressFooterButton"),
          lessonsButton = document.querySelector('#lessonsButton'),
          mentorButton = document.querySelector('#mentorButton'),
          aboutusButton = document.querySelector('#aboutusButton'),
@@ -32,6 +40,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
    contactsButton.addEventListener('click', () => {
+      contactsModal.style.display = 'flex';
+      modalSectionOpened = 1;
+      checkModalWindowsState();
+   })
+
+   addressFooterButton.addEventListener('click', function(event) {
+      event.preventDefault();
       contactsModal.style.display = 'flex';
       modalSectionOpened = 1;
       checkModalWindowsState();
@@ -145,4 +160,10 @@ document.addEventListener('DOMContentLoaded', () => {
    }
 
 
+   
+
+
 })
+
+// Phone Mask
+new InputMask({});
