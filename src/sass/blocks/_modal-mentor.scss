@@ -56,9 +56,12 @@
       margin: 13px;
       text-align: center;
       box-sizing: border-box;
-      span {
+      span.bold {
          font-weight: 500;
          display: inline;
+      }
+      span.small {
+         font-size: 80%;
       }
       &:nth-of-type(2),
       &:nth-of-type(5) {

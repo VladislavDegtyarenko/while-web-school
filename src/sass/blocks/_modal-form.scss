@@ -28,12 +28,17 @@
       font-weight: 500;
       font-size: 18px;
       line-height: 130%;
-      background: #ffffff;
+      color: $main;
+      background-color: #ffffff;
       border: none;
       border-radius: 5px;
       box-shadow: border-box;
       &::placeholder {
          color: #bdbdbd;
+      }
+      &:focus {
+         outline-color: $main;
+         color: $main;
       }
    }
    &__button {

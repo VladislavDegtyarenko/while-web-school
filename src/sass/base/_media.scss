@@ -129,8 +129,13 @@
    }
    .course {
       padding: 3vw 0;
+      &__inner {
+         background-image: url("../icons/course/course-bg-web.svg");
+      }
       &__title {
          margin-left: 60px;
+         width: 580px;
+         margin: 0 auto;
       }
       &__wrapper {
          width: 580px;
@@ -141,9 +146,17 @@
          min-height: 155px;
       }
       &__descr {
-         margin-top: 10px;
+         width: 400px;
+         display: block;
+         margin: 10px auto 0;
+         &_item {
+            margin-top: 0;
+         }
          &_button {
-            left: calc(80% - 60px);
+            position: relative;
+            bottom: 0;
+            left: 0;
+            margin-top: 10px;
          }
       }
    }
@@ -183,6 +196,15 @@
       }
       &__side {
          background-image: url("../img/finish-side-720p.jpg");
+      }
+   }
+   .get__wrapper {
+      width: 560px;
+   }
+   .get__card {
+      flex-basis: 27%;
+      &_img {
+         align-items: center;
       }
    }
    .footer {
@@ -278,19 +300,12 @@
       }
    }
    .aboutus {
-      &__inner {
-         padding: 25px 45px;
-      }
       &__title {
          margin-left: 37px;
       }
       &__logo {
          margin-top: 20px;
          height: 340px;
-      }
-      &__wrapper {
-         width: 56%;
-         padding-left: 40px;
       }
       &__item {
          margin: 10px 0;

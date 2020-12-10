@@ -165,7 +165,7 @@
       left: 100%;
       width: 100%;
       height: 510px;
-      padding: 60px 20px 60px 40px;
+      padding: 60px 50px;
       background-color: rgba($color: $main, $alpha: 0.9);
       transition: all 0.2s linear;
       box-sizing: border-box;
@@ -242,7 +242,7 @@
    }
    &__button {
       position: absolute;
-      left: 187px;
+      left: calc(50% - 82px);
       bottom: 51px;
    }
 }
